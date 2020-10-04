@@ -14,10 +14,12 @@
     <RootNamespace>WslManager</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>1024px-Logo_WSL.svg.ico</ApplicationIcon>
     <PackageIcon>1024px-Logo_WSL.svg.png</PackageIcon>
     <PackageLicenseFile>licence.txt</PackageLicenseFile>
+    <UserSecretsId>1f528e64-5f8b-47a5-9b47-63c4a2913531</UserSecretsId>
+    <RepositoryUrl>https://github.com/anaymalpani/WslManager</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,8 +35,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="ObjectListView.Repack.Core3" Version="2.9.2" />
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
