@@ -1,0 +1,126 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>WslManager.Program</StartupObject>
+    <PackageId>WslManager</PackageId>
+    <Version>0.1</Version>
+    <Authors>AnayMalpani.com</Authors>
+    <Company>Alacritic Solutions Limited</Company>
+    <Product>WslManager</Product>
+    <AssemblyName>WslManager</AssemblyName>
+    <RootNamespace>WslManager</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <ApplicationIcon>1024px-Logo_WSL.svg.ico</ApplicationIcon>
+    <PackageIcon>1024px-Logo_WSL.svg.png</PackageIcon>
+    <PackageLicenseFile>licence.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1024px-Logo_WSL.svg.ico" />
+    <None Remove="External\LxRunOffline.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="External\LxRunOffline.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="ObjectListView.Repack.Core3" Version="2.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="**/MainForm.*.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/RestoreForm.*.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/RunAsForm.*.cs">
+      <DependentUpon>RunAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/UserFindForm.*.cs">
+      <DependentUpon>UserFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/RunAsForm.*.cs">
+      <DependentUpon>RunAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/InstallForm.*.cs">
+      <DependentUpon>InstallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="**/DistroFindForm.*.cs">
+      <DependentUpon>DistroFindForm.cs</DependentUpon>
+    </Compile>
+	<Compile Update="**/PropertiesForm.*.cs">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Screens\RestoreForm - 복사.Components.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Screens\RestoreForm - 복사.Helpers.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Screens\RestoreForm - 복사.Layout.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Screens\RestoreForm - 복사.Models.cs">
+      <DependentUpon>RestoreForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="External\LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="External\LICENSE-3RD-PARTY">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="..\..\data\1024px-Logo_WSL.svg.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\data\licence.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="1024px-Logo_WSL.svg.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </SplashScreen>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WslManager", "WslManager\WslManager.csproj", "{CD574ACE-EBC7-4974-BEAF-155F28E42D12}"
+EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "WSLMANAGERSETUP", "AI Setup Project1\WSLMANAGERSETUP.aiproj", "{C6B6FA5C-C851-48CD-BCE4-6F8DBC682FB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.All|Any CPU.Build.0 = Release|Any CPU
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD574ACE-EBC7-4974-BEAF-155F28E42D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B6FA5C-C851-48CD-BCE4-6F8DBC682FB4}.All|Any CPU.ActiveCfg = DefaultBuild
+		{C6B6FA5C-C851-48CD-BCE4-6F8DBC682FB4}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{C6B6FA5C-C851-48CD-BCE4-6F8DBC682FB4}.Release|Any CPU.ActiveCfg = DefaultBuild
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDE736A3-4270-421A-9B92-E85272D49BC1}
+	EndGlobalSection
+EndGlobal

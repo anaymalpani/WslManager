@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "WslManager": {
+      "commandName": "Project"
+    }
+  }
+}
